@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to my gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        *{
+        text-transform: capitalize;
+        }
+
+        /* body {
+            background-color:#242038;
+            color: white; */
+        /* } */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: #31bebe;
+            color: black;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+    
+        }
+       nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul a li{
+            list-style: none;
+            color: white;
+        }
+        nav ul a li:hover{
+             color: rgb(34, 132, 115);
+             font-size: 1.04rem;
+        }
+        a li{
+            color: black;
+        }
+        
+        
+        
+        
+        .shop-section{
+    margin-top: 0px;
+    display: flex;
+flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #0f0f0f;
+}
+.box{
+    height: 300px;
+    /* border: 1px solid rgb(40, 40, 40); */
+    width: 12%;
+    background-color: solid rgb(40, 40, 40);
+    /* pUpdateing: 20px,0px,15px; */
+    /* margin-top:15px; */
+    border-radius: 12px;
+}
+.box-image{
+    height: 220px;
+    background-size: cover;
+    margin-top: 1rem;
+    /* margin-bottom: 1rem;  */
+    background-color: solid rgb(40, 40, 40);
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content p{
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    color: #f11313ea;
+}
+ 
+ footer{ 
+    margin-top: 1px;
+    /* margin-bottom: 35px; */
+}
+.foot-panel{
+    background-color:  rgb(5, 1, 1);
+    color: white;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.85rem;
+} 
+.foot-panel2{
+    background-color: rgb(5, 1, 1);
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 20px;
+}
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddd;
+}
+h4{
+    font-size: 25px;
+    margin-bottom: 100px;
+    
+}
+.a2{
+    margin: 15px;
+    padding: 8px;
+    width: 320px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold; 
+    /* text-decoration-color:red; */
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    margin-bottom: 1000px;
+    
+
+    font-size: x-large;
+}
+p a{
+    color: white;
+    font-weight: bold;
+    margin: 2px;
+    padding: 2px;
+    
+}
+p a:hover {
+    color: rgb(34, 132, 115);
+             font-size: 1.04rem;
+}
+.email{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 40px;
+    align-items: center;
+    margin-left: 150px;
+    background-color: rgba(5, 3, 3, 0.804);
+    color: white;
+     margin-top: 100px;
+     /* margin-right: 1000px; */
+    font-size: large;
+   /* margin-left: 500px; */
+
+}
+ 
+
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    
+    <nav>
+        <div class="left">nitish's portfolio </div>
+        <div class="right">
+            <ul>
+               <a href="/all html/home.html"> <li>Home</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="/all html/experience.html"><li>work experience</li></a>
+                <!-- <a href="#"><li>Service</li></a> -->
+                <a href="/all html/project.html"><li>Projects</li></a>
+                <a href="/all html/contact.html"><li>Contact us</li></a>
+                <a href="/all html/gallery.html"><li>Gallary</li></a>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <!-- slide show -->
+        <div class="hero-section">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="/nitishPortfolio.blog/assest/download.webp" style="height: 350px; width: 1470px;">
+                </div>
+                <div class="mySlides fade">
+                  <img src="/nitishPortfolio.blog/assest/AI.jpg" style="height: 350px; width: 1470px;">
+                </div>
+                <div class="mySlides fade">
+                  <img src="/nitishPortfolio.blog/assest/2018-08-1323-20-38-PM.jpg" style="height: 350px; width: 1470px;">
+                </div>
+                </div>
+                <br>
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}    
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="shop-section">
+         
+    <div class=" box">
+        <div class="box-content">
+             
+        <div class="box-image" style="background-image: url('/nitishPortfolio.blog/assest/WhatsApp\ Image\ 2023-11-23\ at\ 09.18.14_e4aa0313.jpg');"></div>
+        <p>Recently Update</p>
+        </div>
+    </div>
+    <div class=" box"> 
+        <div class="box-content">
+        
+    <div class="box-image" style="background-image: url('/nitishPortfolio.blog/assest/WhatsApp\ Image\ 2023-11-23\ at\ 09.07.29_121d7fa5.jpg');"></div>
+    <p>Recently Update</p>
+    </div> </div>
+    <div class=" box">
+        <div class="box-content">
+            <h2></h2>
+        <div class="box-image" style="background-image: url('/nitishPortfolio.blog/assest/WhatsApp\ Image\ 2023-11-23\ at\ 09.18.12_484a4234.jpg');"></div>
+        <p>Recently Update</p>
+        </div>
+    </div>
+    <div class=" box">
+        <div class="box-content">
+            
+        <div class="box-image" style="background-image: url('/nitishPortfolio.blog/assest/WhatsApp\ Image\ 2023-11-23\ at\ 09.10.34_0f6df32c.jpg');"></div>
+        <p>Recently Update</p>
+        </div>
+
+    </div>
+    <div class=" box">
+        <div class="box-content">
+            
+        <div class="box-image" style="background-image: url('/nitishPortfolio.blog/assest/2.jpg');"></div>
+        <p>Recently Update</p>
+        </div>
+    </div>
+    <div class=" box">
+        <div class="box-content">
+            
+        <div class="box-image" style="background-image: url('/nitishPortfolio.blog/assest/WhatsApp\ Image\ 2023-11-23\ at\ 09.07.28_f618f7bf.jpg');"></div>
+        <p>Recently Update</p>
+        </div>
+    </div>
+    <div class=" box">
+        <div class="box-content">
+            
+        <div class="box-image" style="background-image: url('/nitishPortfolio.blog/assest/WhatsApp\ Image\ 2023-11-23\ at\ 09.07.26_b0f657c7.jpg');"></div>
+        <p>Recently Update</p>
+        </div>
+    </div>
+    </div>
+    
+    
+     
+<footer>
+    <div class="foot-panel">
+  <!-- <h4><strong>Ready to watch? Enter your email to create or restart your membership.</strong></h4> -->
+  <h4>Welcome to my protofilio please subscribe my channel.</h4>
+    <input class="email" type="Email" value="Email Updateress"> 
+           <!-- <div><a class="a2" href="/sign.html">  Get Started ></a></div> 
+        
+        </pre> -->
+      
+
+        </div>
+        </div>
+        <div class="foot-panel2">
+            
+            <ul2>
+                <!-- <span>Ready to watch? Enter your email to create or restart your membership</span> -->
+                <h3>
+                    <!-- contact me- 6207141506</h3><br> -->
+<!--                   
+                <p>contact me </p>
+                <p>call-6207141506</p>
+                  -->
+                <!-- <p>Corporate Information</p>
+                <p>Legal Notices</p> -->
+               
+            </ul2>
+            <ul2>
+                <h3>Connect with nitish kumar</h3><br>
+               <p><a href=" https://www.linkedin.com/in/nitish-kumar-762461281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">linkdin</a></p> 
+               <p><a href="https://www.facebook.com/profile.php?id=100084109027367&mibextid=rS40aB7S9Ucbxw6v">facebook</a></p> 
+               <p><a href="https://youtube.com/@GEC-1AURANGABAD.?si=dfQZt2g1tl4gfvPk">youtube</a></p> 
+               <p> <a href="https://instagram.com/nitish6207141506?igshid=OGQ5ZDc2ODk2ZA==">instagram</a></p> 
+               
+            </ul2>
+            <ul2>
+                <!-- <h3>Investor Relations </h3><br>
+                  
+                 <p> call</p>
+                 <p>Cookie Preferences</p>
+                 <p>Terms of Use</p>
+                 <p> Privacy</p>
+                 -->
+
+               
+            </ul2>
+            <!-- <ul2>
+                <h3>Let Us Help You</h3><br>
+                
+               <p>Help Centre</p>
+               <p>Only on Netflix</p>
+               <p>Netflix App Download</p>
+               <p>Help</p>
+               
+            </ul2> -->
+            
+        </div>
+    
+</body>
+</html>

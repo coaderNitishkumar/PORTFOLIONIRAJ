@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Engineer Nitish Kumar </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        *{
+        text-transform: capitalize;
+        }
+
+        body {
+            background-color:#242038;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: #272929;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+    
+        }
+       nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul a li{
+            list-style: none;
+            color: white;
+        }
+        nav ul a li:hover{
+             color: rgb(34, 132, 115);
+             font-size: 1.04rem;
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin:  80px 0 ;
+        }
+        .firstsection > div{
+            width: 30%;
+        }
+        .leftsection {
+         font-size: 1.5rem;
+        
+        }
+        .rightsection img {
+            width: 80%;
+            /* margin: 50px 0; */
+        }
+        .purple{
+            color: aqua;
+        }
+        h3 {
+            color: rgb(255, 0, 238);
+        }
+        #element{
+             color: aqua;;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    
+    <nav>
+        <div class="left">Nitish's portfolio </div>
+        <div class="right">
+            <ul>
+               <a href="/all html/home.html"> <li>Home</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="/all html/experience.html"><li>work experience</li></a>
+                <!-- <a href="#"><li>Service</li></a> -->
+                <a href="/all html/project.html"><li>Projects</li></a>
+                <a href="/all html/contact.html"><li>Contact us</li></a>
+                <a href="/all html/gallery.html"><li>Gallary</li></a>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="firstsection">
+         <div class="leftsection">
+            <h3>welcome </h3><br>
+ <p>Hii, Am <span class="purple">Nitish Kumar </span>i am studying  2nd year in computer science engineering in government engineering college,aurangabad.
+     i done my internship in python language from internshala company and web development in bharatintern</p><br>
+          
+
+               <div></div>  
+                <span id="element"></span>
+
+
+         
+        </div>
+         <div class="rightsection ">
+             <img src="/nitishPortfolio.blog/assest/WhatsApp Image 2023-11-23 at 09.10.34_0f6df32c.jpg" alt="">
+         </div>
+        </section>
+     </main>
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>i am a</i> web developer.', '&amp;video editior','programmer','i am learning DSA in C++ and ','i am also learning advance level of python'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
